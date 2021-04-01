@@ -24,7 +24,7 @@ The outputs for controller are:
 - output_floor: Real-time floor movement.
 - output_request: Real-time request updates.
 
-In the architecture we have defined signals for keeping track of the requests and the floor as it changes.The process sensitivity list includes the clk and the reset , which means that whenever either of them is changed the process block will get executed. We have used a signal named flag so that we can update the request vector every time someone makes a request. In the process it checks the current state of the lift and accordingly it decides its next motion according to the above algorithm.
+In the architecture we have defined signals for keeping track of the requests and the floor as it changes. The process sensitivity list includes the clk and the reset, which means that whenever either of them is changed the process block will get executed. We have used a signal named flag so that we can update the request vector every time someone begins the lift for the first time. In the process it checks the current state of the lift and accordingly it decides its next motion according to the above algorithm.
 
 ### Testbench
 Testbenches are used for simulation purpose. We generated the simulation waveforms using ModelSim, without changing the input signal values manually with the help of testbench. A testbench with name ‘elevator_tb’ is defined. Note that, entity of testbench is always empty i.e. no ports are defined in the entity. Input and output signals are defined inside the architecture body, these signals are then connected to actual elevator design using behavioral modeling using port map function.  Also note that, process statement is written without the sensitivity list. Lastly, different values are assigned to input signals.
