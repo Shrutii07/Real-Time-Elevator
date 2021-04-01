@@ -37,3 +37,6 @@ Testbenches are used for simulation purpose. We generated the simulation wavefor
 ### Transcript window
 <img src="https://github.com/Shrutii07/Real-Time-Elevator/blob/main/Results/elevator_transcript.png" height="400" width="320">
 
+### RTL View
+<img src="https://github.com/Shrutii07/Real-Time-Elevator/blob/main/Results/RTL_elevator.png"   height="250" width = "720">
+
