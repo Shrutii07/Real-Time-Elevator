@@ -1,5 +1,7 @@
 # Real-Time-Elevator
 
+This repo contains VHDL code for real-time 4-storey elevator control system. Feel free to raise issue or contact the contributors in case of any doubts or development of this code.
+
 ## Problem Statement
 Design a 4-storey elevator control system. The system receives real-time inputs from multiple users at multiple floors simultaneously. Real-time requests can be made from the outside (for calling the lift on the floor) or from inside (indicating which floor you want to go). The machine initially takes the actual floor/state of the elevator, the requests at hand, and how the lift is now going (upwards/downwards) or the lift's previous motion(upwards/downwards) as inputs.
 
